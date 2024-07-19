@@ -1,0 +1,22 @@
+exemplo de Enum com métodos
+public enum DayOfWeek {
+    SUNDAY("Domingo"),
+    MONDAY("Lunes"),
+    TUESDAY("Martes"),
+    WEDNESDAY("Miércoles"),
+    THURSDAY("Jueves"),
+    FRIDAY("Viernes"),
+    SATURDAY("Sábado");
+
+    private final String spanishTranslation;
+
+    // Construtor privado para associar a tradução espanhola com cada dia da semana
+    private DayOfWeek(String spanishTranslation) {
+        this.spanishTranslation = spanishTranslation;
+    }
+
+    // Método para obter a tradução em espanhol de um dia da semana
+public String getSpanishTranslation() {
+        return spanishTranslation;
+    }
+}
